@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beer[fi]nder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Beer[fi]nder</h1>
+        <!-- Searcher for the beer word -->
+        <div class="row">
+            <div class="col-xs-12  col-lg-12">
+                <div id="jumbofinder">
+                    <div class="jumbotron">
+                        <form action="" method="POST" class="form-inline" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="">label</label>
+                                <input type="text" value="" class="form-control" id="beer-name" placeholder="Insert your Cold Beer...">
+                            </div>
+                            <button id="search-beer" type="submit" class="btn">Get your beer!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of the searcher of the beer word -->
+        <!-- Brands of beer -->
+        <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <h2 class="titleBrand hidden">Brand</h2>
+                <div id="jumbobrand">
+                    <div id="beer-selector-container" class="jumbotron hidden">
+                        <select id="beer-selection" class="input-lg form-control"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of type of beer -->
+        <!-- Snippet with name, image and description -->
+        <div id="beer-info-container" class="container hidden">
+            <h2 class="titleBrand hidden">Your selection</h2>
+            <div class="info-container col-md-6 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                            <img id='img-beer' class="lib-img-show">
+                        </div>
+                        <div class="col-md-6">
+                            <div id="name-beer" class="lib-row lib-header">
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div id='description-beer' class="lib-row lib-desc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Snippet -->
+    <!-- jquery load -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
